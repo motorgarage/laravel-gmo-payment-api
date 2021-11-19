@@ -41,24 +41,26 @@ trait GmoCreditCard
      */
     public function execTran(array $data): array
     {
-        $fillable = ['AccessID',
+        $fillable = [
+            'AccessID',
             'AccessPass',
             'OrderID',
             'Method',
             'PayTimes',
-            'SiteID',
-            'SitePass',
-            'MemberID',
-            'SeqMode',
-            'CardSeq',
-            'CardPass',
+            'CardNo',
+            'Expire',
+            'HolderName',
             'SecurityCode',
+            'Token',
+            'PIN',
+            'HttpAccept',
+            'HttpUserAgent',
+            'DeviceCategory',
             'ClientField1',
             'ClientField2',
             'ClientField3',
             'ClientFieldFlag',
-            'TokenType',
-            'RetUrl'
+            'TokenType'
         ];
         $data = $this->checkParams($fillable, $data);
 
