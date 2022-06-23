@@ -47,6 +47,8 @@ trait GmoCreditCard
             'OrderID',
             'Method',
             'PayTimes',
+            'SiteID',
+            'SitePass',
             'CardNo',
             'Expire',
             'HolderName',
